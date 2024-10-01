@@ -17,7 +17,8 @@ Tech Stack:
 
 How to Use:
 
-	1.	Clone the repository:
+ 1. Clone the repo
+
         git clone https://github.com/your-username/portfolio-website.git
 
  2.	Open the index.html file in a browser to view the portfolio locally.
