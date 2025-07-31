@@ -1,0 +1,87 @@
+
+$bg-light: #ffffff;
+$text-light: #111111;
+$bg-dark: #111111;
+$text-dark: #ffffff;
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+body.light-mode {
+  background: $bg-light;
+  color: $text-light;
+}
+body.dark-mode {
+  background: $bg-dark;
+  color: $text-dark;
+}
+
+header {
+  background: inherit;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      li a, li button {
+        text-decoration: none;
+        color: inherit;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+section {
+  padding: 2rem;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn {
+  background: #0070f3;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn.outline {
+  background: none;
+  border: 1px solid currentColor;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+.skills div ul {
+  list-style: none;
+  padding-left: 0;
+}
+.project-card {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+.socials a {
+  margin-right: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
