@@ -1,435 +1,656 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shashank More - Software Developer Portfolio showcasing projects, skills, and experience"
+    />
+    <meta name="author" content="Shashank More" />
+    <meta
+      name="keywords"
+      content="Shashank More, Software Developer, Full Stack, React, Java, Portfolio"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon-2.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/x-icon"
+      href="assets/favicon-2.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-2.png" />
+    <title>Shashank More | Software Developer</title>
 
-    <meta property='og:title' content='Shashank More - Personal Portfolio'/>
-    <meta property='og:image' content='assets/profile.jpeg'/>
-    <meta property='og:description' content='software engineer | lifelong learner | tech enthusiast'/>
-    <meta property='og:url' content='https://shashankmore20.github.io/'/>
-
-    <title>Shashank More - Software Engineer </title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    <!-- adding a favicon -->
-    <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="public/img/favicon.ico" type="image/x-icon">
-
-    <!-- Custom styles for this template -->
-    <link href="public/stylesheets/grayscale.css" rel="stylesheet">
-    <!-- <link href="public/stylesheets/grayscale.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-
-  <body id="page-top">
-
+  <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
+        <a class="navbar-brand" href="index.html">SM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#work">Work</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
-            <li class="nav-item" id="resume-button-li"> 
-              <a id="resume-button" class="js-scroll-trigger" href="http://shashankmore20.github.io/Shashank_More_Resume.pdf">Resume</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">More About Me</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn theme-toggle"
+                id="themeToggle"
+                aria-label="Toggle dark mode"
+              >
+                <i class="bi bi-moon-fill"></i>
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <br></br>
-          <img class="circularimage" src="assets/photo.jpeg" alt="shashankmoreheadshot.jpg" height="200">
-          <br><br><br>
-          <h1 class="mx-auto my-0 text-uppercase">Shashank More</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">software engineer | lifelong learner | tech enthusiast </h2>
-          <a id="moreButton" href="#about" class="btn btn-primary js-scroll-trigger">More About Me</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about-section text-center">
-      <div id = "about" class="container">
-        <br><br>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Hey there! I'm Shashank More, a software engineer currently pursuing my Master's in Computer Science at <a href="https://www.northeastern.edu/">Northeastern University</a>. </h2>
-            <p class="text-white-50"> I'm a Khoury Teaching Assistant for CS4530(Fundaments of Software Engineering) at the Khoury College of Computer Science, Northeastern University. I'm interested in building web apps, mobile apps, and teaching / tutoring (both coding and non-coding things!). <br /> <br />
-              I have previous experience in industry roles. I've previously worked at AI4LEX and Apptmyz and intered at Deloitte.
-              Please see my <a href="https://shashankmore20.github.io/Shashank_More_Resume.pdf">resume</a> (or continue scrolling down here) if you want to learn more about my past positions.
-               <br /> <br />
-              Above all, I am passionate about exploring new trends in technology.
-              <br /> <br /> <br />
-              In my free time, I enjoy working out, cooking, traveling, swimming, playing board games, tennis and chess!!
-              <br><br><br><br><br><br><br><br><br>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 hero-content">
+            <p class="greeting fade-in">Hey there! I'm</p>
+            <h1 class="name fade-in">Shashank More</h1>
+            <h2 class="role">
+              <span id="typing-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="tagline fade-in">
+              I love turning ideas into real products. Whether it's a sleek web
+              app or a complex backend system, I enjoy the whole journey from
+              concept to deployment.
+            </p>
+            <div class="hero-buttons fade-in">
+              <a href="#projects" class="btn btn-primary btn-lg"
+                >View My Work</a
+              >
+              <a
+                href="assets/Shashank_More_Resume.pdf"
+                class="btn btn-outline-primary btn-lg"
+                download
+                >Download Resume</a
+              >
+            </div>
+            <div class="social-links fade-in">
+              <a
+                href="http://linkedin.com/in/shashank-more-254028119"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/Shashankmore20"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:more.shas@northeastern.edu" aria-label="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-image fade-in">
+            <img
+              src="assets/photo.jpeg"
+              alt="Shashank More - Software Developer"
+              class="profile-img"
+            />
           </div>
         </div>
       </div>
     </section>
 
-
-<!-- work experience section -->
-<section class="work-section bg-light">
-  <div class="container" id = "work">
-
-    <div class="work-title bg-black">
-    <!--title -->
-    <div class="row no-gutters bg-black mb-5 mb-lg-0">
-      <div class="workpadding">
-        <h2 class="text-white featured-text"> Work Experience</h2>   
-        <br>
-          <p class="text-white-50">Please see my <a href="https://www.linkedin.com/in/shashank-more-254028119/">LinkedIn</a> for the complete list of my past work experiences.</p>   
-      </div>
-    </div>
-
-    <!--neu-->
-    <div class="row justify-content-center no-gutters bg-black mb-5 mb-lg-0">
-      <div class="col-lg-2 text-center">
-        <img class="circularlogo" src="assets/Nu_logo.png" alt="NuLogo.jpg" height="200">
-      </div>
-
-      <div class="col-lg-10">
-        <div class="bg-black text-center h-100 project">
-          <div class="d-flex h-100">
-            <div class="project-text w-100 my-auto text-center text-lg-left">
-              <div class="workpadding">
-              <h4 class="text-white">Khoury College of Computer Science, Northeastern University</h4>
-              <h4 class="text-white">Teaching Assistant</h4>
-              <p class="text-white">Aug 2025 - Present</p>
-              <ul class="mb-0 text-white-50">
-                <li>Guided students through Fundamentals of Software Engineering, React, and React Hooks during labs and 
-                  office hours, supporting 70+ students weekly with hands-on technical help.</li>
-                  <li>Mentored 35+ students on implementing MVC-based architecture, unit testing with Jest, and using mocks
-                    to improve code reliability.</li>
-                    <li> full-stack projects built with React, Node.js and MongoDB, evaluating code quality, modularity, and test 
-                      coverage. </li>
-              </ul>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">About Me</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="about-content scroll-animate">
+              <p>
+                I'm currently pursuing my Master's in Computer Science at
+                <strong>Northeastern University</strong>, and honestly, I
+                couldn't be more excited about where this journey is taking me.
+                I've had the chance to work on some really cool projects — from
+                building a legal-tech platform in Italy to creating logistics
+                apps that actually made people's jobs easier.
+              </p>
+              <p>
+                Right now, I'm a <strong>Teaching Assistant</strong> for a
+                software engineering course, which means I get to help students
+                figure out React, testing, and all that fun stuff. It's
+                rewarding to see those "aha!" moments when something finally
+                clicks.
+              </p>
+              <p>
+                Outside of tech? I'm probably on a tennis court, deep into a
+                chess puzzle, trying a new recipe (with varying degrees of
+                success), or planning my next travel adventure. Life's too short
+                to just stare at code all day, right?
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--neu-->
-    <div class="row justify-content-center no-gutters bg-black mb-5 mb-lg-0">
-      <div class="col-lg-2 text-center">
-        <img class="circularlogo" src="assets/Nu_logo.png" alt="NuLogo.jpg" height="200">
-      </div>
-
-      <div class="col-lg-10">
-        <div class="bg-black text-center h-100 project">
-          <div class="d-flex h-100">
-            <div class="project-text w-100 my-auto text-center text-lg-left">
-              <div class="workpadding">
-              <h4 class="text-white">Office of Global Services, Northeastern University</h4>
-              <h4 class="text-white">Global Student Mentor</h4>
-              <p class="text-white">Aug 2025 - Present</p>
-              <ul class="mb-0 text-white-50">
-                <li>Guided up to 25 incoming international graduate students each semester, providing personalized support, 
-                  cultural orientation, and regular check-ins to ease their transition to Northeastern and U.S. campus life.</li>
-                  <li>Organized and led monthly small-group meetings and in-person events, fostering community building and
-                     engagement among mentees.</li>
-                    <li>Collaborated with the Office of Global Services on special projects, including event coordination, 
-                      newsletter contributions, and social media initiatives to enhance student outreach.</li>
-              </ul>
+            <div class="education-cards scroll-animate">
+              <div class="edu-card">
+                <div class="edu-logo">
+                  <img
+                    src="assets/Nu_logo.png"
+                    alt="Northeastern University Logo"
+                  />
+                </div>
+                <div class="edu-details">
+                  <h3>
+                    <a
+                      style="color: #96263c"
+                      href="https://www.northeastern.edu/"
+                      >Northeastern University</a
+                    >
+                  </h3>
+                  <p style="padding-top: 7px">
+                    <strong>Master of Science in Computer Science</strong>
+                  </p>
+                  <span class="edu-date">Expected May 2027</span>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-          <!--ai4lex -->
-    <div class="row justify-content-center no-gutters bg-black mb-5 mb-lg-0"> 
-      <div class="col-lg-2 text-center">
-        <img class="circularlogo" src="assets/ai4lex.png" alt="amazon.png" height="200">
-      </div>
-
-      <div class="col-lg-10">
-        <div class="bg-black text-center h-100 project">
-          <div class="d-flex h-100">
-            <div class="project-text w-100 my-auto text-center text-lg-left">
-              <div class="workpadding">
-              <h4 class="text-white">AI4LEX</h4>
-              <h4 class="text-white">Senior Software Development Engineer</h4>
-              <p class="text-white">Sep 2024 - Dec 2024</p>
-              <ul class="mb-0 text-white-50">
-                <li>Engineered a full-stack legal-tech platform using Next.js and Go, reducing training time for legal professionals by 40% and 
-                  case file management time by 50%.</li>
-                <li>Built and deployed containerized applications with Docker, ensured cross-environment consistency, and managed Agile workflows using Jira to enhance 
-                  project delivery and user experience.</li>
-              </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </div>
-    <!--apptmyz -->
-    <div class="row justify-content-center no-gutters bg-black mb-5 mb-lg-0"> 
-      <div class="col-lg-2 text-center">
-        <img class="circularlogo" src="assets/apptmyz.jpeg" alt="ibm.png" height="200">
-      </div>
-
-      <div class="col-lg-10">
-        <div class="bg-black text-center h-100 project">
-          <div class="d-flex h-100">
-            <div class="project-text w-100 my-auto text-center text-lg-left">
-              <div class="workpadding">
-              <h4 class="text-white">Apptmyz</h4>
-              <h4 class="text-white">Software Developer Intern</h4>
-              <p class="text-white">Jan 2023 - July 2024</p>
-              <ul class="mb-0 text-white-50">
-                <li> Developed bug-free Android and iOS applications using Android Studio and Xcode, tailored for a B2B logistics 
-                  business, ensuring optimal functionality and user satisfaction. </li>
-                  <li> Designed modern and intuitive UI with Figma and enabled real-time package tracking streamlining operations and 
-                    boosting efficiency.</li>
-                    <li> Implemented a unique tracking code system to eliminate manual errors, improving package identification 
-                      accuracy by 40%.</li>
-                      <li> Led QA efforts through debugging and performance tuning, shipping periodic updates based on user feedback,
-                         ensuring app stability and growth.</li>
-              </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </div>
-
-        <!--deloitte -->
-        <div class="row justify-content-center no-gutters bg-black mb-5 mb-lg-0"> 
-          <div class="col-lg-2 text-center">
-            <img class="circularlogo" src="assets/deloitte.png" alt="microsoft.png" height="200">
-          </div>
-    
-          <div class="col-lg-10">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <div class="workpadding">
-                  <h4 class="text-white">Deloitte</h4>
-                  <h4 class="text-white">Technical Analyst Intern</h4>
-                  <p class="text-white">Dec 2021 - July 2022</p>
-                  <ul class="mb-0 text-white-50">
-                    <li>  Interned as a Technical Analyst. </li>
-                    <li>  Provided technical support to Deloitte US and India employees, resolving issues on both Mac and
-                       Windows systems with a 100% satisfaction rate, ensuring minimal downtime and enhanced user productivity. </li>
-                    <li>  Streamlined IT support operations by efficiently managing and resolving tickets using ServiceNow,
-                       maintaining accurate records and adhering to SLA timelines to deliver exceptional service quality.</li>
-                  </ul>
-                  </div>
+              <div class="edu-card">
+                <div class="edu-logo">
+                  <img src="assets/bhavans.webp" alt="Bhavans Logo" />
+                </div>
+                <div class="edu-details">
+                  <h3>
+                    <a style="color: #4748af" href="https://bhavansvc.ac.in/"
+                      >Bhavan's Vivekananda College</a
+                    >
+                  </h3>
+                  <p style="padding-top: 7px">
+                    <strong>Bachelor's in Computer Applications</strong>
+                  </p>
+                  <span class="edu-date">May 2023</span>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
-  </div>
-</div>
-  </section>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Skills</h2>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="skills-grid scroll-animate">
+              <div class="skill-category">
+                <h3><i class="bi bi-code-slash"></i> Languages</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">Kotlin</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">Go</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3><i class="bi bi-layers"></i> Frameworks & Databases</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Spring Boot</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Express.js</span>
+                  <span class="skill-tag">React.js</span>
+                  <span class="skill-tag">Next.js</span>
+                  <span class="skill-tag">JUnit</span>
+                  <span class="skill-tag">MySQL</span>
+                  <span class="skill-tag">MongoDB</span>
+                  <span class="skill-tag">Oracle DB</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3><i class="bi bi-gear"></i> Technologies</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">REST APIs</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Kubernetes</span>
+                  <span class="skill-tag">Jenkins</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3><i class="bi bi-cloud"></i> Cloud & Tools</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">AWS</span>
+                  <span class="skill-tag">Microsoft Azure</span>
+                  <span class="skill-tag">Figma</span>
+                  <span class="skill-tag">Postman</span>
+                  <span class="skill-tag">Jira</span>
+                  <span class="skill-tag">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item scroll-animate">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-logo">
+                  <img src="assets/khoury.png" alt="Khoury College Logo" />
+                </div>
+                <div class="timeline-header-text">
+                  <h3>Graduate Teaching Assistant</h3>
+                  <span class="company"
+                    ><a href="https://khoury.northeastern.edu"
+                      >Khoury College of Computer Science, Northeastern
+                      University</a
+                    ></span
+                  >
+                  <span class="date">Aug 2025 – Present</span>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Supported 100+ students weekly across labs and office hours
+                  for Fundamentals of Software Engineering, providing hands-on
+                  guidance on React, React Hooks, and component-based
+                  architecture.
+                </li>
+                <li>
+                  Mentored 60+ students on MVC architecture, unit testing with
+                  Jest, usability testing with Cypress, and mocking strategies
+                  to improve overall code reliability and test coverage.
+                </li>
+                <li>
+                  Reviewed and provided structured feedback on 35+ full-stack
+                  projects built with React, Node.js, and MongoDB, focusing on
+                  code modularity, separation of concerns, and test coverage.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item scroll-animate">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-logo">
+                  <img
+                    src="assets/Nu_logo.png"
+                    alt="Office of Global Services Logo"
+                  />
+                </div>
+                <div class="timeline-header-text">
+                  <h3>Global Student Mentor</h3>
+                  <span class="company"
+                    ><a href="https://international.northeastern.edu/ogs/"
+                      >Office of Global Services, Northeastern University</a
+                    ></span
+                  >
+                  <span class="date">Aug 2025 – Present</span>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Guided more than 25 incoming international graduate students
+                  each semester, providing personalized support, cultural
+                  orientation, and regular check-ins to ease their transition to
+                  Northeastern and U.S. campus life.
+                </li>
+                <li>
+                  Organized and led monthly small-group meetings and in-person
+                  events, fostering community building and engagement among
+                  mentees.
+                </li>
+                <li>
+                  Collaborated with the Office of Global Services on special
+                  projects, including event coordination, newsletter
+                  contributions, and social media initiatives to enhance student
+                  outreach.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item scroll-animate">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-logo">
+                  <img src="assets/ai4lex.png" alt="AI4LEX Logo" />
+                </div>
+                <div class="timeline-header-text">
+                  <h3>Full-Stack Developer</h3>
+                  <span class="company"
+                    ><a href="https://ai4lex.com">AI4LEX</a></span
+                  >
+                  <span class="date">Jan 2023 – Jul 2024</span>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Built an accessible Next.js frontend for a legal-tech
+                  platform, improving UI clarity and reducing onboarding time
+                  for new legal professionals by 40% through intuitive design
+                  and end-to-end testing.
+                </li>
+                <li>
+                  Integrated OAuth-based authentication to secure platform
+                  access for legal professionals, validated REST APIs using
+                  Postman, and collaborated asynchronously with a
+                  cross-functional team in Italy to deliver features on
+                  schedule.
+                </li>
+                <li>
+                  Developed RESTful APIs and backend services in Go, reducing
+                  case file management time by 50%; containerized the
+                  application using Docker to ensure consistent behavior across
+                  development, staging, and production environments.
+                </li>
+                <li>
+                  Utilized Jira for Agile project management, tracking tasks,
+                  and enhancing project delivery effectiveness while improving
+                  user experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item scroll-animate">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-logo">
+                  <img src="assets/apptmyz.jpeg" alt="Apptmyz Logo" />
+                </div>
+                <div class="timeline-header-text">
+                  <h3>Software Developer</h3>
+                  <span class="company"
+                    ><a href="https://apptmyz.com"
+                      >Apptmyz Technologies Pvt. Ltd.</a
+                    ></span
+                  >
+                  <span class="date">Dec 2022 – Mar 2023</span>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Developed Android applications in Java and led the migration
+                  to Kotlin to align with modern Android development standards,
+                  while also building iOS features in Xcode, delivering core
+                  logistics functionality including order management and
+                  real-time package tracking.
+                </li>
+                <li>
+                  Designed UI/UX flows in Figma and implemented real-time
+                  package tracking, streamlining field operations, and reducing
+                  manual status update delays.
+                </li>
+                <li>
+                  Engineered a barcode-based tracking system to replace manual
+                  package identification, improving accuracy by 40% and reducing
+                  processing errors across logistics workflows.
+                </li>
+                <li>
+                  Led QA and performance tuning efforts across both platforms,
+                  iterating on user feedback to ship regular updates and
+                  maintain app stability post-launch.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item scroll-animate">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="company-logo">
+                  <img src="assets/deloitte.png" alt="Deloitte USI Logo" />
+                </div>
+                <div class="timeline-header-text">
+                  <h3>Technical Analyst (Part-Time)</h3>
+                  <span class="company"
+                    ><a href="https://deloitte.com">Deloitte USI</a></span
+                  >
+                  <span class="date">Dec 2021 – Jul 2022</span>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  Resolved technical issues for Deloitte US and India teams
+                  across Mac and Windows environments, maintaining high
+                  resolution quality and minimizing downtime for enterprise
+                  users.
+                </li>
+                <li>
+                  Managed and triaged support tickets in ServiceNow, maintaining
+                  SLA compliance and accurate documentation across a high-volume
+                  enterprise IT environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
-    <section class="projects-section bg-light">
-      <div class="container"id="projects">
-        <br><br>
-        
-            <div class="workpadding">
-              <h2 class="text-black featured-text"> Projects</h2>   
-              <br>
-                <p class="text-black-50 mb-0">Below are some of the projects and designs I've worked on for fun!</p>   
-            </div>
-
-        <div class="bg-black">   <!-- this div hides the weird white spaces between some projects in mobile -->
-
-
-        <!-- SalesSync-->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6 bg-black">
-            <img class="img-fluid" src="assets/salesSync.png" alt="Project2Image">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">SalesSync</h4>
-                  <p class="mb-0 text-white-50"> An inventory Mangement system design with wireframing and prototyping </p>
-
-                    <div>
-                      <a href="https://www.figma.com/design/zThDnnImxLeNJpLqKmWSoU/SalesSync-Mangement-System?node-id=0-1&t=rtS3mIcldIGmqVI8-1" class="btn">View It</a>
-                      </div>
-                      <hr class="d-none d-lg-block mb-0 ml-0">
-                  </div>
-                </div>
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title scroll-animate">Projects</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 scroll-animate">
+            <div class="project-card">
+              <div class="project-logo">
+                <img
+                  src="assets/thumbnail.png"
+                  alt="SatisficingMeals Thumbnail"
+                />
               </div>
-            </div>
-            </div>
-
-            <!-- Calendar Application --> 
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6 bg-black">
-          <img class="img-fluid" src="assets/CalendarApp.jpeg" alt="Project3Image">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Calendar Application for Windows and Mac Systems </h4>
-                <p class="mb-0 text-white-50">Calendar Application based on Java with Junit tests and intuitive UI that works on both Windows and Mac Systems.</p>
-        
-                <div></div>
-                <a href="https://github.com/Shashankmore20/CalendarApp" class="btn">View It</a>
-                <hr class="d-none d-lg-block mb-0 mr-0">  
+              <h3>SatisficingMeals</h3>
+              <p>
+                Built and deployed a full-stack meal planning and pantry
+                tracking app on Render using Node.js, Express, and MongoDB,
+                featuring 19 REST API endpoints, bcrypt authentication, and a
+                client-side image caching layer via the Pexels API to reduce
+                redundant network calls.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
               </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shashankmore20/SatisficingMeals"
+                  class="btn btn-sm btn-outline-primary"
+                  ><i class="bi bi-github"></i> Code</a
+                >
+                <!-- <a href="https://www.figma.com/" class="btn btn-sm btn-primary"
+                  ><i class="bi bi-box-arrow-up-right"></i> Design</a
+                > -->
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- University Management System --> 
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6 bg-black">
-          <img class="img-fluid" src="assets/ums.png" alt="Project1Image">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">University Management System </h4>
-                <p class="mb-0 text-white-50">Undergrad final year project that handles the university management system.</p>
-        
-                <div></div>
-                <a href="https://github.com/shashankmore20" class="btn">View It</a>
-                <hr class="d-none d-lg-block mb-0 mr-0">  
+          <div class="col-lg-4 col-md-6 mb-4 scroll-animate">
+            <div class="project-card">
+              <div class="project-logo">
+                <img src="assets/CalendarApp.jpeg" alt="Calendar App Logo" />
               </div>
+              <h3>Calendar App</h3>
+              <p>
+                Developed a cross-platform calendar application in Java with
+                both a Swing GUI and interactive TUI, applying the Command
+                design pattern and MVC architecture; validated functionality
+                through JUnit tests on macOS and Windows.
+              </p>
+              <div class="project-tech">
+                <span>Java</span>
+                <span>Swing</span>
+                <span>JUnit</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shashankmore20/CalendarApp"
+                  class="btn btn-sm btn-outline-primary"
+                  ><i class="bi bi-github"></i> Code</a
+                >
+                <!-- <a
+                  href="https://www.figma.com/design/zThDnnImxLeNJpLqKmWSoU/SalesSync-Mangement-System?node-id=0-1&t=rtS3mIcldIGmqVI8-1"
+                  class="btn btn-sm btn-primary"
+                  ><i class="bi bi-box-arrow-up-right"></i> Design</a
+                > -->
               </div>
             </div>
           </div>
-        </div>
-
+          <div class="col-lg-4 col-md-6 mb-4 scroll-animate">
+            <div class="project-card">
+              <div class="project-logo">
+                <img src="assets/ums.png" alt="University Managemnet Logo" />
+              </div>
+              <h3>University Management System</h3>
+              <p>
+                Built a cross-platform academic management system serving 1,000+
+                users, with modules for attendance tracking, course content, and
+                timetable management; improved faculty workflow efficiency by
+                40% and maintained 99% uptime.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>Android</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/shashankmore20"
+                  class="btn btn-sm btn-outline-primary"
+                  ><i class="bi bi-github"></i> Code</a
+                >
+                <a
+                  href="https://github.com/shashankmore20"
+                  class="btn btn-sm btn-primary"
+                  ><i class="bi bi-box-arrow-up-right"></i> Design</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-
-    <section id="signup" class="contact-section bg-black"> 
+    <section id="contact" class="contact-section">
       <div class="container">
+        <h2 class="section-title scroll-animate">Get In Touch</h2>
         <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <div class="col-lg-8 mx-auto text-center scroll-animate">
+            <div><br /></div>
+            <p class="contact-text">
+              I'm always up for a good conversation — whether it's about a
+              potential project, a job opportunity, or just geeking out about
+              tech. Drop me a line!
+            </p>
+            <div><br /></div>
 
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Connect with me!</h2>
-            <br><br>
-
+            <div class="contact-cards">
+              <a href="mailto:more.shas@northeastern.edu" class="contact-card">
+                <i class="bi bi-envelope-fill"></i>
+                <span>more.shas@northeastern.edu</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/shashank-more-254028119/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-card"
+              >
+                <i class="bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/Shashankmore20"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-card"
+              >
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+            <p class="location scroll-animate">
+              <i class="bi bi-geo-alt-fill"></i> Boston, MA
+            </p>
           </div>
         </div>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Emails</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="mailto:shashankmore0220@gmail.com">shashankmore0220@gmail.com</a>
-                  <a href="mailto:more.shas@northeastern.edu">more.shas@northeastern.edu</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-user-friends text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Socials</h4>
-                <hr class="my-4">
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/shashank-more-254028119/" class="mx-2">
-                    <i class="fab fa-linkedin iconbig"></i>
-                  </a>
-                  <a href="https://github.com/shashankmore20" class="mx-2">
-                    <i class="fab fa-github iconbig"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  +1 (617) 858-7820
-                </div>
-              </div>
-            </div>
-          </div>
-
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        &copy; 2024 Shashank More
+    <footer class="footer">
+      <div class="container text-center">
+        <p>&copy; 2025 Shashank More. All rights reserved.</p>
       </div>
     </footer>
-    </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="public/vendor/jquery/jquery.min.js"></script>
-    <script src="public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="public/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="public/js/grayscale.min.js"></script>
-    <script>
-      $("#resume-button").css('visibility','visible')
-      
-      </script>
-
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

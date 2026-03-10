@@ -1,0 +1,260 @@
+/* AI Page Specific Styles */
+
+/* Hero Section */
+.ai-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  background: linear-gradient(
+    135deg,
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 100%
+  );
+}
+
+.ai-hero-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ai-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.ai-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.ai-hero-content p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* About This Page Section */
+.ai-about-section {
+  padding: 80px 0;
+  background-color: var(--bg-secondary);
+}
+
+.ai-about-card {
+  background-color: var(--bg-primary);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.ai-about-card h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ai-about-card h2 i {
+  color: var(--primary-color);
+}
+
+.ai-about-card p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.ai-about-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* AI Usage Section */
+.ai-usage-section {
+  padding: 80px 0;
+  background-color: var(--bg-primary);
+}
+
+.ai-usage-card {
+  background-color: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.ai-usage-item {
+  margin-bottom: 2rem;
+}
+
+.ai-usage-item:last-child {
+  margin-bottom: 0;
+}
+
+.ai-usage-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-usage-item h4 i {
+  color: var(--primary-color);
+}
+
+.ai-usage-item p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.prompt-box {
+  background-color: var(--bg-tertiary);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.prompt-box p {
+  font-style: italic;
+  margin: 0;
+}
+
+/* Thoughts on AI Section */
+.ai-thoughts-section {
+  padding: 80px 0;
+  background-color: var(--bg-secondary);
+}
+
+.ai-thoughts-card {
+  background: linear-gradient(
+    135deg,
+    var(--bg-primary) 0%,
+    var(--bg-tertiary) 100%
+  );
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.ai-thoughts-card h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ai-thoughts-card h2 i {
+  color: var(--primary-color);
+}
+
+.ai-thoughts-card p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.ai-thoughts-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* CTA Section */
+.ai-cta-section {
+  padding: 80px 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-hover) 100%
+  );
+}
+
+.ai-cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.ai-cta-section p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.ai-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ai-cta-section .btn-primary {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  border-color: #ffffff;
+}
+
+.ai-cta-section .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.ai-cta-section .btn-outline-primary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.ai-cta-section .btn-outline-primary:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ai-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .ai-hero-content p {
+    font-size: 1rem;
+  }
+
+  .ai-icon {
+    font-size: 3rem;
+  }
+
+  .ai-about-card,
+  .ai-thoughts-card,
+  .ai-usage-card {
+    padding: 1.5rem;
+  }
+
+  .ai-about-card h2,
+  .ai-thoughts-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .ai-about-card p,
+  .ai-thoughts-card p {
+    font-size: 1rem;
+  }
+
+  .ai-cta-section h2 {
+    font-size: 1.75rem;
+  }
+}
