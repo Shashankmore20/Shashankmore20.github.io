@@ -7,9 +7,12 @@
 const typingElement = document.getElementById("typing-text");
 const roles = [
   "Full-Stack Developer",
+  "Android Developer",
+  "Backend Developer",
+  "React Developer",
+  "Critical Thinker",
   "Problem Solver",
   "Coffee Enthusiast ☕",
-  "React Developer",
   "Lifelong Learner",
   "Tennis Player 🎾",
 ];
